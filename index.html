@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Week 1 Profile Page</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Profile</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section>
+            <div class="container">
+                <h2>Profile Picture</h2>
+                <img src="images/profile.jpg" alt="Profile Picture" class="profile-pic">
+                <p>Upload a new profile picture:</p>
+                <form action="upload.php" method="POST" enctype="multipart/form-data">
+                    <label for="profile_pic">Choose a file:</label>
+                    <input type="file" id="profile_pic" name="profile_pic" accept="image/*" required>
+                    <input type="submit" value="Upload">
+                    <label for="options">Choose an option:</label>
+                    <select id="options" name="options">
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                    </select>
+                </form>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h2>Welcome to the Profile Page</h2>
+                <p>This is where you can view and edit your profile information.</p>
+                <form action="update_profile.php" method="POST" enctype="application/x-www-form-urlencoded">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <input type="submit" value="Update Profile">
+                </form>
+            </div>
+
+            <div>
+                <aside>
+                    <h3>Recent Activities</h3>
+                    <ul>
+                        <li>Logged in on 2023-10-01</li>
+                        <li>Updated profile on 2023-09-28</li>
+                        <li>Uploaded a new picture on 2023-09-20</li>
+                    </ul>
+                </aside>
+            </div>
+        </section>
+
+        <section>
+            <article>
+                <h2>Latest News</h2>
+                <p>Stay updated with the latest news and updates from our platform.</p>
+                <ul>
+                    <li><a href="news1.html">News Article 1</a></li>
+                    <li><a href="news2.html">News Article 2</a></li>
+                    <li><a href="news3.html">News Article 3</a></li>
+                </ul>
+            </article>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Rinaldi. All rights reserved.</p>
+            <ul>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms of Service</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+
+</html>
